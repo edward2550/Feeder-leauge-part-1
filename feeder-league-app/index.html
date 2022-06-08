@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Locator Landing Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css" integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body class="body">
+  <div class="card row" style="width: 40%; border-radius: 5px; background-color: #181818; color: white; font-weight: bolder; margin: 10px;">
+    
+    <!-- Additional wrapper -->
+    <div class="main">
+      
+      <!-- Title -->
+      <img class="ballin-logo" src="images/nbaLogo.png">
+      
+      <!-- Form -->
+      <form id="search-form" class="form">
+        <!-- Drop down -->
+        <select class="dropdown" id="player">
+          <option value="starter" selected>Player - List</option>
+        </select>
+        <button type="button" id="season">2k22 season awards</button> 
+        <button type="button" id="feeder">Feeder of the Year</button> 
+      </form>
+    </div>
+  </div>
+    <!-- Team card with season statistics -->
+    <div class="card section-teamStats">
+        <div id="selectedTeam">
+            <img src="https://maroonersrock.com/wp-content/uploads/2020/05/2K-Logo.jpg"
+                        class="dog-img"
+                        alt='dog'
+                        />
+        </div>
+        <div class="teamStatsTable">
+            <div class="nba-title">Player Stats</div>
+            <table>
+                <tr>
+                    <td class="statsKeyTitle">Position</td>
+                    <td class="statsKeyValue" id="position"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">Team Average</td>
+                    <td class="statsKeyValue" id="teamav"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">PPG</td>
+                    <td class="statsKeyValue" id="ppg"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">RPG</td>
+                    <td class="statsKeyValue" id="rpg"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">APG</td>
+                    <td class="statsKeyValue" id="apg"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">Blocks</td>
+                    <td class="statsKeyValue" id="blocks"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">Steals</td>
+                    <td class="statsKeyValue" id="steals"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">FG%</td>
+                    <td class="statsKeyValue" id="fg"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">3PT%</td>
+                    <td class="statsKeyValue" id="3pt"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">FT%</td>
+                    <td class="statsKeyValue" id="ft"></td>
+                </tr>
+                <tr>
+                    <td class="statsKeyTitle">Assist/To</td>
+                    <td class="statsKeyValue" id="to"></td>
+                </tr>
+            </table>
+        </div>
+        
+        </div>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
